@@ -1,0 +1,3 @@
+# Project exclude paths
+/HDFS/target/
+/zookeeper/target/
