@@ -46,7 +46,7 @@ public class HDFSClient {
         FileSystem fs = FileSystem.get(new URI("hdfs://master:9000"), conf , "tangyun");
 
         // 2执行上传API
-        fs.copyFromLocalFile(new Path("C:/Users/tangyun/Desktop/test2.txt"), new Path("/test3.txt"));
+        fs.copyFromLocalFile(new Path("D:/Desktop/test.txt"), new Path("/wwllqq/test/dashen/test1.txt"));
 
         // 3关闭资源
         fs.close();
@@ -71,10 +71,10 @@ public class HDFSClient {
     public void testDelete() throws IOException, InterruptedException, URISyntaxException{
         // 1获取fs对象
         Configuration conf = new Configuration();
-        FileSystem fs = FileSystem.get(new URI("hdfs://master:9000"), conf , "tangyun");
+        FileSystem fs = FileSystem.get(new URI("hdfs://matser:9000"), conf , "tangyun");
 
         // 2文件删除
-        fs.delete(new Path("/test3.txt"), false);
+        fs.delete(new Path("/wwllqq/"), true);
         // 3关闭资源
         fs.close();
     }
